@@ -41,6 +41,32 @@ const Cart = (props) => {
         <span>Total Amount</span>
         <span>{totalAmount}</span>
       </div>
+      {hasItems && (
+        <div style={{ display: "flex", justifyContent: "space-around" }}>
+          <form>
+            <input type="text" label="Name" id="name" placeholder="Full Name" />
+            <br />
+            <input
+              type="number"
+              label="Phone"
+              id="phone"
+              placeholder="Mobile Number"
+              required
+            />
+            <br />
+            <input
+              type="text"
+              label="Address"
+              id="address"
+              placeholder="Detailed Address"
+              required
+            />
+            <div>
+              <br></br>
+            </div>
+          </form>
+        </div>
+      )}
       <div className={classes.actions}>
         <button className={classes["button--alt"]} onClick={props.onClose}>
           Close

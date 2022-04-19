@@ -5,7 +5,7 @@ import classes from "./AvailableMeals.module.css";
 const DUMMY_MEALS = [
   {
     id: "m1",
-    name: "Shada Vat",
+    name: "Sada Vat",
     description: "Finest rice in the town",
     price: 25,
   },
@@ -18,18 +18,18 @@ const DUMMY_MEALS = [
   {
     id: "m3",
     name: "Shutki Vorta",
-    description: "Loitta Shutki with spice",
+    description: "Loitta Shutki mixed with chilli spice",
     price: 45,
   },
   {
     id: "m4",
     name: "Begun Vaji",
     description: "Made with fresh eggplant",
-    price: 25,
+    price: 20,
   },
   {
     id: "m5",
-    name: "Murgir Mangsho",
+    name: "Murgir Mangso",
     description: "Exeptional and delicious meat",
     price: 50,
   },

@@ -6,6 +6,11 @@
   overflow: auto;
 }
 
+.onright {
+  margin-left: auto;
+  margin-right: 0;
+}
+
 .total {
   display: flex;
   justify-content: space-between;

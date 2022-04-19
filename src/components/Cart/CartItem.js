@@ -8,6 +8,7 @@ const CartItem = (props) => {
       <div>
         <h2>{props.name}</h2>
         <div className={classes.summary}>
+          {/* {console.log(props.name, props.amount, props.price)} */}
           <span className={classes.price}>{price}</span>
           <span className={classes.amount}>x {props.amount}</span>
         </div>

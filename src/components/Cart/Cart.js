@@ -28,6 +28,7 @@ const Cart = (props) => {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [address, setAddress] = useState("");
+  const [isSubmit, setIsSubmit] = useState(false);
   // const [data, setData] = useState("");
 
   // const ref = firebase.firestore().collection("orders");
@@ -44,7 +45,7 @@ const Cart = (props) => {
     };
 
     // foodorderRef.push(orders);
-    db.collection("orders").add(order);
+    db.collection("orders").add(order) && setIsSubmit(true);
   };
 
   const cartItems = (
@@ -98,6 +99,7 @@ const Cart = (props) => {
               required
             />
             <div>
+              {isSubmit && <p>Order Successful. You can close the cart</p>}
               <br></br>
             </div>
           </form>
